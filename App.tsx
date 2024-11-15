@@ -1,4 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
+import colors from './src/theme/colors';
+import { size, weight } from './src/theme/fonts';
 
 const App = () => {
   return (
@@ -10,13 +12,15 @@ const App = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
+    backgroundColor: colors.white,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   txt: {
-    color: '#000',
+    color: colors.black,
+    fontSize: size.lg,
+    fontWeight: weight.bold,
   },
 });
 
